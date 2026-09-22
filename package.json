@@ -1,0 +1,14 @@
+{
+  "name": "toca-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo: cadastro Google, avatares, Karma anti-spam, presentes raros e moderação segura",
+  "main": "server.js",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "reset": "node -e \"require('fs').rmSync('data',{recursive:true,force:true})\" && node server.js",
+    "promote": "node server.js --promote"
+  },
+  "license": "UNLICENSED"
+}
